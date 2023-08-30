@@ -109,26 +109,26 @@ Fig. 2
 
 **The following abbreviations are used:**
 
-\(m_{rcp}\) — mass of reciprocating parts, kg
+$m_{rcp}$ — mass of reciprocating parts, kg
 
-\(m_{rot}\) — mass of rotating parts, kg
+$m_{rot}$ — mass of rotating parts, kg
 
-\(L\) — connecting rod length, m
+$L$ — connecting rod length, m
 
-\(R\) — crank radius, m
+$R$ — crank radius, m
 
-\(\lambda=L/R\) — elongation ratio, equal to the ratio
+$\lambda=L/R$ — elongation ratio, equal to the ratio
 of the connection rod length L to the crank radius R
 
-\(\omega\) — angular velocity, crankshaft rotational speed (\(\omega=\frac{2\pi N}{60}\)), \(s^{-1}\)
+$\omega$ — angular velocity, crankshaft rotational speed ($\omega=\frac{2\pi N}{60}$), $s^{-1}$
 
-\(\alpha\) — the crank-angle with respect to the x-axis, grad
+$\alpha$ — the crank-angle with respect to the x-axis, grad
 
-\(\delta_{i}\) — angle between first crankpin and subsequent ones on the crankshaft, grad
+$\delta_{i}$ — angle between first crankpin and subsequent ones on the crankshaft, grad
 
-\(\gamma\) — angle between the two banks of cylinders (V - angle), grad
+$\gamma$ — angle between the two banks of cylinders (V - angle), grad
 
-\(h_{i}\) — the pitch distances between the first connecting rod and subsequent ones on the crankshaft journals, m
+$h_{i}$ — the pitch distances between the first connecting rod and subsequent ones on the crankshaft journals, m
 
 
 ---
