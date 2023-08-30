@@ -134,8 +134,7 @@ $h_{i}$ — the pitch distances between the first connecting rod and subsequent 
 ---
 ### References
 
-1. Železko B.E. Osnovy teorii i dinamika avtomobilnych i traktornych dvigatelej. / Железко Б.Е. Основы теории и динамика автомобильных и тракторных двигателей.
-Minsk : Vysšaja škola, 1980 / Мн. : Выш. школа, 1980.
+1. Železko B.E. Osnovy teorii i dinamika avtomobilnych i traktornych dvigatelej. Minsk : Vysšaja škola, 1980 / Железко Б.Е. Основы теории и динамика автомобильных и тракторных двигателей. Мн. : Выш. школа, 1980.
 
 2. Alberto Dagna , Cristiana Delprete, Chiara Gastaldi. A General Framework for Crankshaft Balancing and
 Counterweight Design. Department of Mechanical and Aerospace Engineering, Politecnico di Torino. Appl. Sci. 2021, 11(19), 8997; https://doi.org/10.3390/app11198997.
