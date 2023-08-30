@@ -96,11 +96,11 @@ $$
 
 ---
 
-![Fig. 1](./01.png)
+![Fig. 1](./Images/01.png)
 
 Fig. 1
 
-![Fig. 2](./02.png)
+![Fig. 2](./Images/02.png)
 
 Fig. 2
 
