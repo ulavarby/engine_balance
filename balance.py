@@ -1,8 +1,5 @@
 #! /usr/bin/env python3
 
-# a1 - alpha release
-# 
-
 '''Script for calculation of engine balance.
    The calculation is valid for single-row engines and V-engines with
    the same number of cylinders in the left and right banks.
