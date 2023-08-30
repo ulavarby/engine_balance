@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-# a1 - alpha relise
+# a1 - alpha release
 # 
 
 '''Script for calculation of engine balance.
