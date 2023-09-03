@@ -5,7 +5,7 @@
 ## Motivation
 **engine_balance.py** is designed to calculate the dynamic balance of reciprocating and rotating masses of internal combustion engines.
 
-This tool is a Python revision of a program created in 1978 for a graduation project at the Belarusian Polytechnic Institute.
+This tool is a Python revision of a program created in 1978 for a graduation project at the Belarusian National Technical University.
 The original program was written in "ap" ("ап") language for computer "NAIRI-2".
 
 ## Theory
