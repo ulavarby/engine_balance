@@ -12,7 +12,6 @@ import yaml
 import os
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
-import time
 
 def forses(P1, P2):
     """Reciprocating Forces.
