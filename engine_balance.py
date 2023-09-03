@@ -131,7 +131,7 @@ def visualization():
 
     fig1.tight_layout(pad=4.0)
     fig1.suptitle('Forses, Moments', fontsize='x-large', weight ='heavy') 
-    
+
     ax1.plot(A_values, P1_values, color='blue', linestyle='-', marker='.', markevery=30)
     ax1.set_xlim(0,360)
     ax1.set_xlabel('crank rotation angle, [°]')
@@ -142,7 +142,7 @@ def visualization():
              transform=ax1.transAxes, fontsize=8, va='bottom')
     ax1.xaxis.set_major_locator(ticker.MultipleLocator(90))
     ax1.xaxis.set_minor_locator(ticker.MultipleLocator(30))
-    
+
     ax2.plot(A_values, P2_values, color='indigo', linestyle='-', marker='.', markevery=30)
     ax2.set_xlim(0,360)
     ax2.set_xlabel('crank rotation angle, [°]')
@@ -153,7 +153,7 @@ def visualization():
              transform=ax2.transAxes, fontsize=8, va='bottom')
     ax2.xaxis.set_major_locator(ticker.MultipleLocator(90))
     ax2.xaxis.set_minor_locator(ticker.MultipleLocator(30))
-    
+
     ax3.plot(A_values, Krot_values, color='darkblue', linestyle='-', marker='.', markevery=30)
     ax3.set_xlim(0,360)
     ax3.set_xlabel('crank rotation angle, [°]')
@@ -209,37 +209,37 @@ def visualization_max():
 
     fig2.tight_layout(pad=4.0)
     fig2.suptitle('Maximum Values of Forses, Moments', fontsize='x-large', weight ='heavy') 
-    
+
     bark1 = ax1.bar(J_max_values, P1_max_values, width=0.6, align = 'center', color='blue')
     ax1.set_xticks(range(len(J_max_values)))
     ax1.set_xlabel('Journal Number')
     ax1.set_ylabel('P1, [N]')
     ax1.set_title('max of 1st order recipr. forses')
-    
+
     bark2 = ax2.bar(J_max_values, P2_max_values, width=0.6, align = 'center', color='indigo')
     ax2.set_xticks(range(len(J_max_values)))
     ax2.set_xlabel('Journal Number')
     ax2.set_ylabel('P2, [N]')
     ax2.set_title('max of 2nd order recipr. forses')
-    
+
     bark3 = ax3.bar(J_max_values, Krot_max_values, width=0.6, align = 'center', color='darkblue')
     ax3.set_xticks(range(len(J_max_values)))
     ax3.set_xlabel('Journal Number')
     ax3.set_ylabel('Krot, [N]')
     ax3.set_title('max of centrifugal force')
-    
+
     bark4 = ax4.bar(J_max_values, M1_max_values, width=0.6, align = 'center', color='red')
     ax4.set_xticks(range(len(J_max_values)))
     ax4.set_xlabel('Journal Number')
     ax4.set_ylabel('M1, [Nm]')
     ax4.set_title('max of 1st order recipr. moments')
-    
+
     bark5 = ax5.bar(J_max_values, M2_max_values, width=0.6, align = 'center', color='crimson')
     ax5.set_xticks(range(len(J_max_values)))
     ax5.set_xlabel('Journal Number')
     ax5.set_ylabel('M2, [Nm]')
     ax5.set_title('max of 2nd order recipr. moments')
-    
+
     bark6 = ax6.bar(J_max_values, Mrot_max_values, width=0.6, align = 'center', color='darkred')
     ax6.set_xticks(range(len(J_max_values)))
     ax6.set_xlabel('Journal Number')
@@ -247,7 +247,7 @@ def visualization_max():
     ax6.set_title('max of centrifugal moment')
 
     for k in range(1,7):
-    
+
         bark = locals()['bark' + str(k)]
         axk = locals()['ax' + str(k)] 
         for bar in bark:
@@ -279,13 +279,10 @@ with open('mechanics.config.yaml', 'r') as yamlfile:
                            ' \"mechanics.config.yaml\".\nAllowed names: ', ' | '.join(sorted(allnames.keys())))
             config = input('Enter the allowed name :\n')
 
-# mesure time for test only
-start_time = time.time()
-        
 if not os.path.isdir(config):
     os.makedirs(config)
     print("\nDirectory '%s' created" %config)
-    
+
 with open(config + '/' + config + '.maximums.txt', 'w') as max_file:
     max_file.write('Pivot table\n\n')
     max_file.write('Maximum values of calculated results for each variant of\n')
@@ -369,19 +366,19 @@ for j in range(0, counter, 1):
         Krot, Mrot = rots(0, 0)
 
         fomo = [a, P1, P2, Krot, M1, M2, Mrot]
-        
+
         with open(config + '/' + config + '.v' + str(j) + '.csv', 'a', newline='') as result_file:
             resultwrite = csv.writer(result_file)
             resultwrite.writerow(fomo)
-    
+
     print ('\n' + '\033[1m' + 'All results saved to files:  '\
            + '\033[1;36m' +  config + '.v' + str(j) + '.csv,  '\
            + config + '.v' + str(j) + '.png' + '\033[0m')
-    
+
     A_values,P1_values,P2_values,Krot_values,M1_values,M2_values,Mrot_values = aggregation()
-    
+
     P1_max_value,P2_max_value,Krot_max_value,M1_max_value,M2_max_value,Mrot_max_value = max_values()
-    
+
     J_max_values.append(int(j))
     P1_max_values.append(float(P1_max_value))
     P2_max_values.append(float(P2_max_value))
@@ -389,7 +386,7 @@ for j in range(0, counter, 1):
     M1_max_values.append(float(M1_max_value))
     M2_max_values.append(float(M2_max_value))
     Mrot_max_values.append(float(Mrot_max_value))
-    
+
     with open(config + '/' + config + '.maximums' + '.txt', 'a+') as max_file:
         max_file.write("{: >7} | {: >9.2f} | {: >9.2f} | {: >9.2f} | {: >9.2f} | {: >9.2f} | {: >9.2f}\n".format(j, P1_max_value, P2_max_value, Krot_max_value,\
                         M1_max_value, M2_max_value, Mrot_max_value))
@@ -404,5 +401,4 @@ print ('\n\n' + '\033[1m' + 'All of maximum values of calculated '\
                'results for each variant saved to files:  \n' + '\033[1;36m' + config\
                + '.maximums.txt' + ', ' + config  + '.maximums' + '.png' + '\033[0m')
 
-# mesure time for test only
-print ('\nTime used: ', round(time.time() - start_time, 2))
+
