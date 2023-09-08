@@ -10,7 +10,7 @@ The original program was written in "ap" ("ап") language for computer "NAIRI-2
 
 ## Theory
 
-### Proections of Primary Reciprocating Forces:
+### Proections of Primary Reciprocating Forses:
 $$
 \sum P_{rcp1}(x)=m_{rcp}R\omega^2\left(\sum_{i=1}^{n_{left}}cos(\alpha+\delta_i)+cos\gamma\sum_{i=1}^{n_{right}}cos(\alpha+\delta_i-\gamma)\right)
 $$
@@ -19,12 +19,12 @@ $$
 \sum P_{rcp1}(y)=m_{rcp}R\omega^2\sin\gamma\sum_{i=1}^{n_{right}}cos(\alpha+\delta_i-\gamma)
 $$
 
-### Resulting Primary Reciprocating Force:
+### Resulting Primary Reciprocating Forse:
 $$
 \sum P_{rcp1}=\sqrt{\left(\sum P_{rcp1}(x)\right)^2+\left(\sum P_{rcp1}(y)\right)^2}
 $$
 
-### Proections of Secondary Reciprocating Forces:
+### Proections of Secondary Reciprocating Forses:
 $$
 \sum P_{rcp2}(x)=m_{rcp}R\omega^2\lambda\left(\sum_{i=1}^{n_{left}}cos2(\alpha+\delta_i)+cos\gamma\sum_{i=1}^{n_{right}}cos2(\alpha+\delta_i-\gamma) \right)
 $$
@@ -33,12 +33,12 @@ $$
 \sum P_{rcp2}(y)=m_{rcp}R\omega^2\lambda\sin\gamma\sum_{i=1}^{n_{right}}cos2(\alpha+\delta_i-\gamma)
 $$
 
-### Resulting Secondary Reciprocating Force:
+### Resulting Secondary Reciprocating Forse:
 $$
 \sum P_{rcp2}=\sqrt{\left(\sum P_{rcp2}(x)\right)^2+\left(\sum P_{rcp2}(y)\right)^2}
 $$
 
-### Proections of Centrifugal Forces:
+### Proections of Centrifugal Forses:
 $$
 \sum K_{rot}(x)=m_{rot}R\omega^2\sum_{i=1}^{n_{cr}}cos(\alpha+\delta_i)
 $$
@@ -47,7 +47,7 @@ $$
 \sum K_{rot}(y)=m_{rot}R\omega^2\sum_{i=1}^{n_{cr}}sin(\alpha+\delta_i)
 $$
 
-### Resulting Centrifugal Force:
+### Resulting Centrifugal Forse:
 $$
 \sum K_{rot}=\sqrt{\left(\sum K_{rot}(x)\right)^2+\left(\sum K_{rot}(y)\right)^2}
 $$
