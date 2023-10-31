@@ -1,0 +1,49 @@
+#   mrcp: mass of reciprocating parts, kg, float
+#   mrot: mass of rotating parts, kg, float
+#   L: connecting rod length, m, float
+#   R: crank radius, m, float
+#   Omega: angular velocity, s-1, float
+#   Rows: number of rows of cylinders, int
+#   Y: angle between the two banks of cylinders, grad, float
+#   geometry_angles_l: angles between the first and subsequent crankpins of the left row, grad
+#   geometry_angles_r: angles between the first and subsequent crankpins of the right row, leave 0,0,0,0... if not exist (one row engine), grad
+#   geometry_dists_l: distances between the first connecting rod and subsequent ones on the crankshaft journals of the left row, m
+#   geometry_dists_r: distances between the first connecting rod and subsequent ones on the crankshaft journals of the right row, leave 0,0,0,0... if not exist (one row engine), m
+---
+v8x90: # 2-row 8-cylinders 90-angle
+  comment: 2-row 8-cylinders 90-angle
+  Cylinders: 8
+  Rows: 2
+  Y: 90.0
+  mrcp: 1.0
+  mrot: 1.0
+  L: 0.265
+  R: 0.07
+  Omega: 220.0
+  journals:
+    journal0:
+      geometry_angles_l: 0,90,180,270
+      geometry_angles_r: 0,90,180,270
+      geometry_dists_l: 0,0.1,0.2,0.3
+      geometry_dists_r: 0,0.1,0.2,0.3
+v6x90: # 2-row 6-cylinders 90-angle
+  comment: 2-row 6-cylinders 90-angle
+  Cylinders: 6
+  Rows: 2
+  Y: 90.0
+  mrcp: 1.0
+  mrot: 1.0
+  L: 0.265
+  R: 0.07
+  Omega: 220.0
+  journals:
+    journal0:
+      geometry_angles_l: 0,120,240
+      geometry_angles_r: 0,120,240
+      geometry_dists_l: 0,0.1,0.2
+      geometry_dists_r: 0,0.1,0.2
+    journal1:
+      geometry_angles_l: 0,240,120
+      geometry_angles_r: 0,240,120
+      geometry_dists_l: 0,0.1,0.2
+      geometry_dists_r: 0,0.1,0.2

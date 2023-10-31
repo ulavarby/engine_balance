@@ -1,0 +1,170 @@
+#  Cylinders: number of engine cylinders
+#   Rows: number of rows of cylinders, int
+#   Y: angle between the two banks of cylinders, grad, float
+#   mrcp: mass of reciprocating parts, kg, float
+#   mrot: mass of rotating parts, kg, float
+#   L: connecting rod length, m, float
+#   R: crank radius, m, float
+#   Omega: angular velocity, sec⁻¹, float
+#   geometry_angles_l: angles between the first and subsequent crankpins
+#                      of the left row, grad
+#   geometry_angles_r: angles between the first and subsequent crankpins
+#                      of the right row, leave 0,0,0,0... if not exist (one row engine), grad
+#   geometry_dists_l: distances between the first connecting rod and
+#                     subsequent ones on the crankshaft journals of the left row, m
+#   geometry_dists_r: distances between the first connecting rod and
+#                     subsequent ones on the crankshaft journals of the
+#                     right row, leave 0,0,0,0... if not exist (one row engine), m
+---
+demo:
+  comment: FOR DEMO PURPOSE
+  Cylinders: 5.0
+  Rows: 1
+  Y: 0
+  mrcp: 3.262
+  mrot: 4.94
+  L: 0,23
+  R: 0.0625
+  Omega: 219.9
+  journals:
+    journal0:
+      geometry_angles_l: 0.0,97.0,144.0,216.0,288.0
+      geometry_angles_r: 0.0,0.0,0.0,0.0,0.0
+      geometry_dists_l: 0.0,0.135,0.27,0.405,0.54
+      geometry_dists_r: 0.0,0.0,0.0,0.0,0.0
+    journal1:
+      geometry_angles_l: 0.0,211.0,144.0,288.0,97.0
+      geometry_angles_r: 0.0,0.0,0.0,0.0,0.0
+      geometry_dists_l: 0.0,0.135,0.27,0.405,0.54
+      geometry_dists_r: 0.0,0.0,0.0,0.0,0.0
+    journal2:
+      geometry_angles_l: 0.0,288.0,211.0,97.0,144.0
+      geometry_angles_r: 0.0,0.0,0.0,0.0,0.0
+      geometry_dists_l: 0.0,0.135,0.27,0.405,0.54
+      geometry_dists_r: 0.0,0.0,0.0,0.0,0.0
+r4:
+  comment: 1-row 4-cylinders. Based on MMZ D-240 from Minsk Motor Plant
+  Cylinders: 4
+  Rows: 1
+  Y: 0.0
+  mrcp: 3,262
+  mrot: 4.94
+  L: 0.23
+  R: 0.0625
+  Omega: 219.9
+  journals:
+    journal0:
+      geometry_angles_l: 0,180,180,0
+      geometry_angles_r: 0,0,0,0
+      geometry_dists_l: 0,0.135,0.27,0.405
+      geometry_dists_r: 0,0,0,0
+r5:
+  comment: 1-row 5-cylinders. Based on MMZ D-240 from Minsk Motor Plant.
+  Cylinders: 5
+  Rows: 1.0
+  Y: 0.0
+  mrcp: 3.262
+  mrot: 4.94
+  L: 0.23
+  R: 0.0625
+  Omega: 219.9
+  journals:
+    journal0:
+      geometry_angles_l: 0,72,144,216,288
+      geometry_angles_r: 0,0,0,0,0
+      geometry_dists_l: 0,0.135,0.27,0.405,0.54
+      geometry_dists_r: 0,0,0,0,0
+    journal1:
+      geometry_angles_l: 0,72,144,288,216
+      geometry_angles_r: 0,0,0,0,0
+      geometry_dists_l: 0,0.135,0.27,0.405,0.54
+      geometry_dists_r: 0,0,0,0,0
+    journal2:
+      geometry_angles_l: 0,72,216,144,288
+      geometry_angles_r: 0,0,0,0,0
+      geometry_dists_l: 0,0.135,0.27,0.405,0.54
+      geometry_dists_r: 0,0,0,0,0
+    journal3:
+      geometry_angles_l: 0,72,288,144,216
+      geometry_angles_r: 0,0,0,0,0
+      geometry_dists_l: 0,0.135,0.27,0.405,0.54
+      geometry_dists_r: 0,0,0,0,0
+    journal4:
+      geometry_angles_l: 0,72,216,288,144
+      geometry_angles_r: 0,0,0,0,0
+      geometry_dists_l: 0,0.135,0.27,0.405,0.54
+      geometry_dists_r: 0,0,0,0,0
+    journal5:
+      geometry_angles_l: 0,72,288,216,144
+      geometry_angles_r: 0,0,0,0,0
+      geometry_dists_l: 0,0.135,0.27,0.405,0.54
+      geometry_dists_r: 0,0,0,0,0
+    journal6:
+      geometry_angles_l: 0,144,72,216,288
+      geometry_angles_r: 0,0,0,0,0
+      geometry_dists_l: 0,0.135,0.27,0.405,0.54
+      geometry_dists_r: 0,0,0,0,0
+    journal7:
+      geometry_angles_l: 0,144,72,288,216
+      geometry_angles_r: 0,0,0,0,0
+      geometry_dists_l: 0,0.135,0.27,0.405,0.54
+      geometry_dists_r: 0,0,0,0,0
+    journal8:
+      geometry_angles_l: 0,216,72,144,288
+      geometry_angles_r: 0,0,0,0,0
+      geometry_dists_l: 0,0.135,0.27,0.405,0.54
+      geometry_dists_r: 0,0,0,0,0
+    journal9:
+      geometry_angles_l: 0,216,72,288,144
+      geometry_angles_r: 0,0,0,0,0
+      geometry_dists_l: 0,0.135,0.27,0.405,0.54
+      geometry_dists_r: 0,0,0,0,0
+    journal10:
+      geometry_angles_l: 0,144,216,72,288
+      geometry_angles_r: 0,0,0,0,0
+      geometry_dists_l: 0,0.135,0.27,0.405,0.54
+      geometry_dists_r: 0,0,0,0,0
+    journal11:
+      geometry_angles_l: 0,216,144,72,288
+      geometry_angles_r: 0,0,0,0,0
+      geometry_dists_l: 0,0.135,0.27,0.405,0.54
+      geometry_dists_r: 0,0,0,0,0
+v8x90:
+  comment: 2-row 8-cylinders 90-angle
+  Cylinders: 8
+  Rows: 2
+  Y: 90.0
+  mrcp: 1.0
+  mrot: 1.0
+  L: 0.265
+  R: 0.07
+  Omega: 220.0
+  journals:
+    journal0:
+      geometry_angles_l: 0,90,180,270
+      geometry_angles_r: 0,90,180,270
+      geometry_dists_l: 0,0.1,0.2,0.3
+      geometry_dists_r: 0,0.1,0.2,0.3
+v6x90:
+  comment: 2-row 6-cylinders 90-angle
+  Cylinders: 6
+  Rows: 3
+  Y: 90.0
+  mrcp: 1.0
+  mrot: 1.0
+  L: 0.265
+  R: 0.07
+  Omega: 220.0
+  journals:
+    journal0:
+      geometry_angles_l: 0,120,240
+      geometry_angles_r: 0,120,240
+      geometry_dists_l: 0,0.1,0.2
+      geometry_dists_r: 0,0.1,0.2
+    journal1:
+      geometry_angles_l: 0,240,120
+      geometry_angles_r: 0,240,120
+      geometry_dists_l: 0,0.1,0.2
+      geometry_dists_r: 0,0.1,0.2
+
+
